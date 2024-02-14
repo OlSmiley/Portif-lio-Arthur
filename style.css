@@ -1,0 +1,269 @@
+/* geral styling */
+* {
+
+    margin: 0;
+    padding: 0;
+    background-origin: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+
+    background-color: rgb(20, 20, 20);
+    height: 100vh;
+}
+
+.interface {
+
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex-content {
+
+    display: flex;
+}
+
+.btn-contact button {
+
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: rgba(47, 0, 255, 0.712);
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+
+/*header style */
+
+header {
+    background-size: cover;
+    background-position: center;
+    padding: 10px 4%;
+    background-color:  rgba(15, 15, 15);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+
+header>.interface {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+header a {
+
+    color: #7c7c7c83;
+    text-decoration: none;
+    display: inline-block;
+    font-size: large;
+}
+
+header a:hover {
+    color: bisque;
+    transform: scale(1.2);
+    text-shadow: 0 0 10px #ffffff;
+    transition: .2s;
+}
+
+
+header nav ul {
+
+    list-style-type: none;
+}
+
+header nav ul li {
+
+    display: inline-block;
+    padding: 0 40px;
+}
+
+
+
+.btn-contact button:hover {
+
+    transform: scale(1.06);
+    box-shadow: 0px 0px 10px rgba(47, 0, 255, 0.712);
+}
+
+/* style top of the site */
+section.top-of-site {
+
+    padding: 40px 4%;
+}
+
+section.top-of-site .flex-content {
+
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.top-of-site h1 {
+
+    color: bisque;
+    font-size: 45px;
+    line-height: 45px;
+}
+
+.top-of-site .text-top-site p {
+
+    color: bisque;
+    margin: 40px 0;
+}
+
+.top-of-site .img-top-site img {
+
+    position: relative;
+    border-radius: 30px;
+    box-shadow: 0px 0px 20px 0px rgba(255, 255, 255, 0.342);
+    animation: floater 1.5s ease-out infinite alternate;
+}
+
+@keyframes floater {
+
+    0% {
+
+        top: 0;
+    }
+
+    100% {
+
+        top: 30px;
+    }
+}
+
+* {
+
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background: rgb(20, 20, 20);
+}
+
+.visuallyhidden {
+
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    opacity: 0;
+
+}
+
+.container {
+
+    overflow: hidden;
+    padding: 20px;
+    margin-top: 2em;
+    background: rgb(20, 20, 20);
+}
+
+.card-carousel {
+
+    --card-width: 100%;
+    --card-max-width: 500px;
+    --card-height: 550px;
+    --carousel-min-width: 600px;
+    z-index: 1;
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    height: var(--card-height);
+    min-width: var(--carousel-min-width);
+    transition: filter .5s ease;
+}
+
+
+
+@media screen and (max-width: 640px) {
+
+    .card-carousel {
+        
+        margin-left: calc((100vw - var(--carousel-min-width) - 40px) / 2)
+    }
+}
+
+.card-carousel.smooth-return {
+
+    transition: all .2s ease;
+}
+
+.card-carousel .card {
+
+    background: rgba(10, 10, 10);
+    width: var(--card-width);
+    max-width: var(--card-max-width);
+    text-align: center;
+    padding: 1em;
+    min-width: 250px;
+    height: var(--card-height);
+    position: absolute;
+    margin: 0 auto;
+    color: bisque;
+    transition: inherit;
+    box-shadow: 0px 14px 14px 0px rgb(0, 0, 0);
+    border-radius: 1em;
+    filter: brightness(.9);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h2 {
+    
+    padding: 1em;
+    margin-top: 1em;
+
+    background: rgba(0, 0, 0, .3);
+    text-align: center;
+    color: white;
+    border-radius: .2em;
+    display: inline-block;
+    transform: translateX(calc((100vw - 100%) / 2));
+}
+
+span {
+
+    font-style: poppins;
+    color: rgb(110, 92, 187);
+    font-size: 20px;
+}
+
+/*style of footer*/
+
+footer {
+    background-position: center;
+    padding: 30px 4%;
+    background-color: rgba(15, 15, 15);
+    box-shadow: 0 -10px 10px rgba(0, 0, 0, 0.5);
+    margin-top: 100px;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-img {
+    width: 60px;
+    height: auto;
+    margin-right: 20px; /* Adiciona espaço entre a imagem e o texto */
+}
+
+.footer-info p {
+    color: bisque;
+    font-size: large;
+    margin: 0; /* Remove a margem padrão do parágrafo */
+}
+
+
